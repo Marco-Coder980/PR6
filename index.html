@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>009 · Pricing Table</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Flux<span>.</span></div>
+    <ul>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Docs</a></li>
+      <li><a href="#">Log In</a></li>
+      <li><a href="#" class="nav-cta">Get Started</a></li>
+    </ul>
+  </nav>
+
+  <section class="pricing-header">
+    <div class="header-badge">⚡ Transparent Pricing</div>
+    <h1>Pay for what<br>you <span>actually use</span></h1>
+    <p>No hidden fees. No surprise bills. Simple plans that scale with your team — cancel any time.</p>
+    <div class="toggle-wrap">
+      <span class="toggle-label active">Monthly</span>
+      <button class="toggle" aria-label="Toggle billing period"></button>
+      <span class="toggle-label">Annual</span>
+      <span class="save-badge">Save 20%</span>
+    </div>
+  </section>
+
+  <div class="pricing-grid">
+    <!-- STARTER -->
+    <div class="price-card">
+      <div class="plan-badge">Starter</div>
+      <div class="plan-name">Free Plan</div>
+      <div class="plan-desc">Perfect for solo projects and experimentation.</div>
+      <div class="price-row">
+        <div class="price-amount"><span class="price-currency">$</span>0</div>
+        <div class="price-period">Forever free</div>
+      </div>
+      <ul class="features-list">
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">3 active projects</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">5 GB storage</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Community support</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Basic analytics</span></li>
+        <li class="feature-item"><span class="f-check cross">✗</span><span class="f-text crossed">Team collaboration</span></li>
+        <li class="feature-item"><span class="f-check cross">✗</span><span class="f-text crossed">Custom domains</span></li>
+        <li class="feature-item"><span class="f-check cross">✗</span><span class="f-text crossed">API access</span></li>
+      </ul>
+      <a href="#" class="plan-cta cta-outline">Get Started Free</a>
+    </div>
+
+    <!-- PRO (FEATURED) -->
+    <div class="price-card featured">
+      <div class="popular-badge">Most Popular</div>
+      <div class="plan-badge">Pro</div>
+      <div class="plan-name">Pro Plan</div>
+      <div class="plan-desc">For teams ready to move fast and ship great products.</div>
+      <div class="price-row">
+        <div class="price-amount"><span class="price-currency">$</span>49</div>
+        <div class="price-period">per user / month</div>
+      </div>
+      <ul class="features-list">
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Unlimited projects</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">100 GB storage</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Priority support</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Advanced analytics</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Team collaboration (up to 10)</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Custom domains</span></li>
+        <li class="feature-item"><span class="f-check cross">✗</span><span class="f-text crossed">API access</span></li>
+      </ul>
+      <a href="#" class="plan-cta cta-white">Start 14-Day Trial</a>
+    </div>
+
+    <!-- ENTERPRISE -->
+    <div class="price-card">
+      <div class="plan-badge">Enterprise</div>
+      <div class="plan-name">Enterprise Plan</div>
+      <div class="plan-desc">Custom solutions for large teams and mission-critical products.</div>
+      <div class="price-row">
+        <div class="price-amount" style="font-size:2.5rem;">Custom</div>
+        <div class="price-period">Volume pricing available</div>
+      </div>
+      <ul class="features-list">
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Everything in Pro</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Unlimited storage</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Dedicated account manager</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">SLA guarantee (99.99%)</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Unlimited team members</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Custom domains + CDN</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Full API access + webhooks</span></li>
+      </ul>
+      <a href="#" class="plan-cta cta-filled">Contact Sales</a>
+    </div>
+  </div>
+
+  <!-- COMPARE TABLE -->
+  <section class="compare-section">
+    <div class="compare-header">
+      <div>
+        <h2>Compare all features</h2>
+        <p style="margin-top:0.3rem;">A full breakdown across every plan.</p>
+      </div>
+    </div>
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Features</th>
+          <th>Starter</th>
+          <th class="featured-col">Pro ✦</th>
+          <th>Enterprise</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="cat-row"><td colspan="4">Core</td></tr>
+        <tr>
+          <td><div class="feature-name">Projects</div><div class="feature-hint">Active simultaneous projects</div></td>
+          <td>3</td><td class="featured-col">Unlimited</td><td>Unlimited</td>
+        </tr>
+        <tr>
+          <td><div class="feature-name">Storage</div></td>
+          <td>5 GB</td><td class="featured-col">100 GB</td><td>Unlimited</td>
+        </tr>
+        <tr>
+          <td><div class="feature-name">Custom Domains</div></td>
+          <td><span class="no">—</span></td><td class="featured-col"><span class="yes">✓</span></td><td><span class="check-green">✓</span></td>
+        </tr>
+        <tr class="cat-row"><td colspan="4">Collaboration</td></tr>
+        <tr>
+          <td><div class="feature-name">Team Members</div></td>
+          <td>1</td><td class="featured-col">Up to 10</td><td>Unlimited</td>
+        </tr>
+        <tr>
+          <td><div class="feature-name">Real-time Editing</div></td>
+          <td><span class="no">—</span></td><td class="featured-col"><span class="yes">✓</span></td><td><span class="check-green">✓</span></td>
+        </tr>
+        <tr>
+          <td><div class="feature-name">Role Permissions</div></td>
+          <td><span class="no">—</span></td><td class="featured-col"><span class="yes">✓</span></td><td><span class="check-green">✓</span></td>
+        </tr>
+        <tr class="cat-row"><td colspan="4">Support & Security</td></tr>
+        <tr>
+          <td><div class="feature-name">Support Level</div></td>
+          <td>Community</td><td class="featured-col">Priority Email</td><td>Dedicated Manager</td>
+        </tr>
+        <tr>
+          <td><div class="feature-name">SLA</div></td>
+          <td><span class="no">—</span></td><td class="featured-col">99.9%</td><td>99.99%</td>
+        </tr>
+        <tr>
+          <td><div class="feature-name">SSO / SAML</div></td>
+          <td><span class="no">—</span></td><td class="featured-col"><span class="no">—</span></td><td><span class="check-green">✓</span></td>
+        </tr>
+        <tr>
+          <td><div class="feature-name">API Access</div></td>
+          <td><span class="no">—</span></td><td class="featured-col"><span class="no">—</span></td><td><span class="check-green">✓</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <h2>Common Questions</h2>
+    <div class="faq-item">
+      <div class="faq-q">Can I change my plan at any time?</div>
+      <div class="faq-a">Yes — upgrade, downgrade, or cancel at any time from your account settings. If you upgrade mid-cycle, you'll be billed the prorated difference immediately. Downgrades take effect at the end of your billing period.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Is there a free trial for the Pro plan?</div>
+      <div class="faq-a">Yes, every Pro plan starts with a 14-day free trial. No credit card required. You'll be asked for payment details after the trial period ends if you choose to continue.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What payment methods do you accept?</div>
+      <div class="faq-a">We accept all major credit and debit cards (Visa, Mastercard, Amex), PayPal, and bank transfers for Enterprise plans. All transactions are secured via Stripe.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How does team billing work?</div>
+      <div class="faq-a">Pro plans are billed per user per month. You'll be charged for each seat you provision. You can add or remove seats at any time and the amount will be prorated accordingly.</div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo-sm">Flux<span>.</span></div>
+    <span>© 2025 Flux Inc. All rights reserved.</span>
+    <span>Code Odyssey · Project <a href="#">009</a> · Pricing Table</span>
+  </footer>
+
+</body>
+</html>
